@@ -1,0 +1,95 @@
+
+/*GENERAL*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/*CHAT*/
+.chatWindow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.messageBlock{
+  margin-left: 200px;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  max-height: 420px;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.activeChat{
+  position: relative;
+}
+
+.inputBox{
+  position: absolute;
+  bottom: 15px;
+  left: 100px;
+  width: 100%;
+}
+
+.textInput{
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(119, 120, 126, 0.28) 0px 0px 7px;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.sendButton{
+  position: absolute;
+  bottom: 25px;
+  right: 150px;
+}
+
+.messageContainer{
+  margin-top: 30px;
+  background: #eeecf0;
+  width: 80%;
+  border-radius: 15px;
+  min-height: 90px;
+  padding: 5px 30px;
+}
+
+.myMessage{
+  background: #c3ff00;
+  color: #465362;
+}
+
+.smallButton{
+  border: none;
+  border-radius: 12px;
+  margin: 0 10px;
+  width: 100px;
+  height: 20px;
+  color: #465362;
+  background: #c3ff00;
+  box-shadow: rgba(195, 255, 00, 0.5) 0px 0px 7px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.smallButton:hover{
+  box-shadow: rgba(195, 255, 00, 0.8) 1px 1px 7px;
+}
